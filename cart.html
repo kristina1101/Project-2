@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Todhri&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <img class="navImage" src="./Images/logo.png" alt="" />
+      <div class="navButtons">
+        <button class="button1">
+          Home <img src="./Images/pizza.png" alt="" />
+          <div class="hover-line"></div>
+        </button>
+        <button id="cartButton" class="button2">
+          <img class="button2img1" src="./Images/2.png" alt="" /><span
+            >Cart</span
+          >
+          <img class="button2img2" src="./Images/cart_1.png" alt="" />
+        </button>
+        <button class="burger-menu" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <section class="section1">
+      <h1>My Cart</h1>
+    </section>
+    <div class="nav2">
+      <button class="button1" id="button1">Home</button>
+      <p>/</p>
+      <button class="section2cartButton">Cart</button>
+    </div>
+    <section class="section2">
+      <h1>Cart</h1>
+      <div class="description">
+        <div class="description1">
+          <p>Product</p>
+        </div>
+        <div class="description2">
+          <p>Qty</p>
+          <p>Price</p>
+          <p>Total</p>
+        </div>
+      </div>
+      <div class="cartProductsList"></div>
+      <div class="part3">
+        <span class="totalAmount1"
+          >Total :
+          <p class="totalAmount"></p
+        ></span>
+        <div class="clearAndProceedButtons">
+          <button class="clearCartButton" id="clearCartButton">
+            CLEAR CART
+          </button>
+          <button class="proceed">PROCEED TO CHECKOUT</button>
+        </div>
+      </div>
+    </section>
+    <script src="./cart.js"></script>
+  </body>
+</html>
